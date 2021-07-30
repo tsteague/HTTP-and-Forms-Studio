@@ -1,19 +1,32 @@
 <!doctype html>
 
 <head>
-	<meta charset="utf-8">
-	<script>
-		// TODO: create a handler
+  <meta charset="utf-8">
+  <style>
+    * { font-family: Arial, Verdana, Helvetica }
+    form { border: 1px solid gray; width: 40%; margin: 25%; margin-top: 20%; margin-bottom: 70%; padding: 50px;}
+    div#engines { display: inline; margin-right: 10px;}
+    input[type="submit"] { background-color: #282A5F; font-weight: bold; color: white; }
+  </style>
+
+  <script>
+    // TODO: create a handler
     window.addEventListener("load", function(){
-        // TODO: register the handler
+      // TODO: register the handler
     });
-	</script>
+  </script>
 </head>
 
 <body>
-
-	<form id="searchForm">
+  <form id="searchForm">
     <!-- TODO: add form elements -->
-	</form>
-
+    <label for="q">Search for: </label><input type="text" name="q" id="q">
+    <div id="engines">
+      <input type="radio" name="engine" id="google" value="https://www.google.com/search"><label for="google">Google</label>
+      <input type="radio" name="engine" id="DuckDuckGo" value="https://duckduckgo.com"><label for="DuckDuckGo">DuckDuckGo</label>
+      <input type="radio" name="engine" id="bing" value="https://www.bing.com/search"><label for="bing">Bing</label>
+      <input type="radio" name="engine" id="ask" value="https://www.ask.com/web"><label for="ask">Ask</label>
+    </div>
+    <input type="submit" value="Go!">
+  </form>
 </body>
